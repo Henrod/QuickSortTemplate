@@ -11,9 +11,8 @@ template <typename T>
 void QuickSort<T>::sort(T* array, int lo, int hi) {
 	if (lo >= hi) return;
 
-	int i = lo + 1,
-	    j = hi,
-	    v = array[lo];
+	int i = lo + 1, j = hi;
+	T v = array[lo];
 
 	while (i <= j) {
 		if 	(array[i] <=v) i++;
