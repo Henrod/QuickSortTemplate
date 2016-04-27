@@ -15,8 +15,8 @@ void QuickSort<T>::sort(T* array, int lo, int hi) {
 	T v = array[lo];
 
 	while (i <= j) {
-		if 	(array[i] <=v) i++;
-		else if (array[i] > v) swap(array, i, j--);
+		if (array[i] > v) swap(array, i, j--);
+		else ++i;
 	}
 
 	swap(array, lo   , j    );

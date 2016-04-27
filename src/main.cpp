@@ -8,7 +8,7 @@ int main() {
 	cout << "Tamanho da lista: ";
 	cin >> size; cout << endl;
 
-	Array<string> array(size);
+	Array<int> array(size);
 	array.print();
 
 	array.sort();
